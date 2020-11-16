@@ -51,9 +51,9 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('注册失败')
+                    return layer.msg('登录失败')
                 }
-                layer.msg('注册成功')
+                layer.msg('登录成功')
                     //如果登陆成功了 服务器会返回我们一个token数据，将这个数据储存起来
                 localStorage.setItem('token', res.token)
                     //登陆成功后我们 将页面跳转到主页
